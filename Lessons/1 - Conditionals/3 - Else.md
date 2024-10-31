@@ -14,6 +14,7 @@
 
 - [The `Else` Statement](#lesson)
 - [Examples](#examples)
+- [A Note about `prompt()`](#a-note-about-prompt)
 - [Practice Time!](#practice-time)
     - [Part 1 - ???](#part-1)
     - [Part 2 - ???](#part-2)
@@ -41,6 +42,8 @@ They don't select from the proper range or they enter a _word_. Perhaps they don
 
 ### Lesson:
 
+> **Recall:** An if-statement can only have _one_ `if` but several optional `else if` pieces.
+
 So far, we know how to handle the _correct_ responses:
 
 <table>
@@ -61,8 +64,83 @@ if (selection == 1) {
 
 <td>
 
-But what about all the other possibilities?
-
+**But what about all the other possibilities?**
 </td>
 </tr>
 </table>
+
+In the event that the `if` and `else if` statements do not find a true evaluation, `else` can handle _all other possibilities_. It's like saying "otherwise". **Note:** there can be only _one_ `else` and it needs to be at the end.
+
+
+```JS
+if (selection == 1) {
+    // Code here
+} else if (selection == 2) {
+    // Code here
+} else if (selection == 3) {
+    // Code here
+} else {
+    alert("Invalid selection/input.");
+}
+```
+
+This completes the `if-statement` package, creating a powerful tool!
+
+---
+
+### Examples
+
+1. You need a given value to be even and positive _or_ below zero:
+```JS
+if ((value > 0) && (value % 2 == 0)) {
+    return Math.sqrt(value);
+} else if (value < 0) {
+    return "Cannot take the square-root of a negative";
+} else {
+    return `${value} is neither even nor positive`;
+}
+```
+
+2. You have a guessing game and the user needs to guess between 1 and 6:
+```JS
+// Is the input valid?
+if (user_guess >= 1 && user_guess <= 6) {
+    // The input is valid, check their guess
+    if (user_guess == hidden_number) {
+        alert("Correct! Congratulations!");
+    } else {
+        alert("Sorry, guess again.");
+    }
+} else {
+    alert("Error. The guess has to be from 1-6.");
+}
+```
+
+Do you understand the example above? Remember - `else if` is _optional_. 
+
+---
+
+### A Note About `prompt()`
+
+> Ever wonder what happens if the user clicks "Cancel" on a prompt?
+
+It actually returns `null`.
+
+```JS
+let menu_selection = prompt("Select 1 for Play...");
+
+if (menu_selection == null) {
+    // Deal with the user having clicked "Cancel"
+}
+```
+
+---
+
+### Practice Time!
+
+#### Part 1
+
+
+
+
+#### Part 2
