@@ -18,12 +18,146 @@
 /*** Functions ***/
 
 // A very accurate rounding function
-function round(value, decimals) {
-    let multiplier = 10**decimals;
-    return Math.round((value + Number.EPSILON) * multiplier) / multiplier;
-}
+    function round(value, decimals) {
+        let multiplier = 10**decimals;
+        return Math.round((value + Number.EPSILON) * multiplier) / multiplier;
+    }
 
-// Get a random number from min to max
-function randInt(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-}
+    // Get a random number from min to max
+    function randInt(min, max) {
+     return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
+
+    function user() {
+        let user_input = prompt("what is your age?")
+
+        let user_name = prompt("what is your name?")
+
+        let user_guess = prompt("how long do you think your name is?")
+    
+    
+    
+
+    if (user_input >=60) {
+        console.log("you qualify for the senior discount!")
+    }
+
+    
+    if (user_input <= 16) {
+        console.log("You're not old enough to drive yet")
+    }
+    
+    
+    if (user_input == 44) {
+        console.log("So is Mr. Squirrel!")
+    }
+
+    
+    if (user_name == "Mr.Sqirrel") {
+        console.log("🐿️")
+    }
+
+
+    if (user_name.length >= "7") {
+        console.log("you have a long name!")
+    }
+
+
+    if (user_guess == user_name.length) {
+        console.log("that is correct!!! ✔️")
+    }
+
+
+    if (user_guess >= user_name.length) {
+        console.log("that is too high ✖️")
+    }
+
+
+    if (user_guess <= user_name.length) {
+        console.log("that is too low ✖️")
+    }
+
+    }
+
+
+
+// else if
+
+    // Setup the menu
+
+    
+
+
+    function menu() {
+
+        let message = `Hi! Please make a selection:
+        value    output
+        1  -  Play
+        2  -  Options
+        3  -  DLC
+        4  -  Check for Updates
+        5  -  Exit`
+
+        let selection = Number(prompt(message));
+
+        if (selection == 1) {
+            alert("Let's play!")
+            let level = prompt("what difficulty do you want? 1 - Easy, 2 - Medium, or 3 - Hard")
+
+            console.log(level)
+            if (level == 1) {
+                alert("You selected the easy route.")
+
+            } else if (level == 2) {
+                alert("Most people select medium.")
+
+            } else if (level == 3) {
+                alert("I see you like a challenge!")
+
+            }
+    
+        } else if (selection == 2) {
+            alert("You selected Options")
+    
+        } else if (selection == 3) {
+            alert("No new DLC at this time.")
+    
+        } else if (selection == 4) {
+            alert("Everything is up to date.")
+    
+        } else if (selection == 5) {
+            alert("Bye!")
+        } else if (selection >= 6) {
+
+        }
+
+
+
+    }
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
