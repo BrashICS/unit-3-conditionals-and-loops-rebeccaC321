@@ -1,6 +1,6 @@
 # Unit 3 - Conditionals and Loops
 
-## 3.4 - While
+## 3.5 - Interlude: `Strings`
 
 ##### ICS3 - Mr. Brash 🐿️
 
@@ -8,18 +8,18 @@
 
 <table>
 <tr>
-<th>3.4 - In this Lesson:</th>
+<th>3.5 - In this Lesson:</th>
 <th>Unit 3 - Conditionals & Loops</th>
 </tr>
 <tr>
 <td td valign="top" style="height: 100px;padding-right:50px">
 
-- [The `While` Loop](#lesson)
+- [Strings](#lesson)
 - [Examples](#examples)
 - [Practice Time!](#practice-time)
-    - [Part 1 - is_number](#part-1---is_number)
-    - [Part 2 - Validate](#part-2---validate)
-    - [Part 3 - Guess](#part-3---guess)
+    - [Part 1](#part-1---is_number)
+    - [Part 2](#part-2---validate)
+    - [Part 3](#part-3---guess)
     
 </td>
 <td td valign="top" style="height: 100px;padding-right:50px">
