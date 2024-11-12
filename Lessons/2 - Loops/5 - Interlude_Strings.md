@@ -15,9 +15,6 @@
 - Lesson - [Remember Strings?](#lesson---remember-strings)
 - [Examples](#examples)
 - [Practice Time!](#practice-time)
-    - [Part 1](#part-1---is_number)
-    - [Part 2](#part-2---validate)
-    - [Part 3](#part-3---guess)
 
 </td>
 <td td valign="top" style="height: 100px;padding-right:50px">
@@ -143,33 +140,35 @@ let repeated_string = duplicate("Yay Code!", 100);
 let output = "";
 let sample_text = "This is a typical sentence.";
 let n = 0;
+// The character code for a space is 32
+const SPACE = 32
 
 while (n < sample_text.length) {
-  // The character code for a space is 32
-  if (sample_text.charCodeAt(n) != 32) {
+  if (sample_text.charCodeAt(n) != SPACE) {
     output += sample_text[n];
   }
-  // Make sure we go ahead one character
   n++;
 }
 
 console.log(output);    // Thisisatypicalsentence.
 ```
 
-## Your Task
+## Practice Time!
+
+###### [⬆ Top](#35---interlude-strings)
 
 Try creating the following functions:
-- `reverse(str)` _Print_ the reverse of the given string to the console.
+- `print_reverse(str)` _Print_ the reverse of the given string to the console.
   <br>Examples:
   ```JS
-  reverse("Hello");
+  print_reverse("Hello");
   "olleH"
-  reverse("Coding's great!");
+  print_reverse("Coding's great!");
   "!taerg s'gnidoC"
   ```
 
 - `dragons_and_goblins(str)`
-  For this function a string of random letters is passed in (for example `dragons_and_goblins("dbhfghfgdbchdnwjdg")`). Your job is to count how many dragons ("d") and goblins ("g") are encountered. _Print_ the result to the console as shown in the examples below:
+  For this function a string of random letters (`str`) is passed in (for example `dragons_and_goblins("dbhfghfgdbchdnwjdg")`). Your job is to count how many dragons ("d") and goblins ("g") are encountered. _Print_ the result to the console as shown in the examples below:
   ```JS
   dragons_and_goblins("dbhfghfgdbchdnwjdg");
   "Dragons: 4 Goblins: 3"
@@ -185,7 +184,7 @@ Try creating the following functions:
   console.log(add("11111111112222255"));
   30
   ```
-- `add_subtract(str)` The same as the `add()` function _except_ if you encounter a "-" symbol, the next number is _subtracted_ from the total. _Return_ the result.
+- `add_subtract(str)` The same as the `add()` function (add single digits) _except_ if you encounter a "-" symbol, the next single digit value is _subtracted_ from the total. _Return_ the result.
   <br>Example:
   ```JS
   console.log(add_subtract("543-36-9"));
