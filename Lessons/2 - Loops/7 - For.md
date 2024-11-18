@@ -15,9 +15,8 @@
 - Lesson - [The For Loop](#lesson)
 - [Examples](#more-examples)
 - [Practice Time!](#practice-time)
-    - [Part 1](#part-1---is_number)
-    - [Part 2](#part-2---validate)
-    - [Part 3](#part-3---guess)
+    - [Part 1](#part-1)
+    - [Part 2](#part-2)
     
 </td>
 <td td valign="top" style="height: 100px;padding-right:50px">
