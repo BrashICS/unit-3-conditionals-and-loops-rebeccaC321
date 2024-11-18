@@ -17,6 +17,7 @@
 - [Practice Time!](#practice-time)
     - [Part 1](#part-1)
     - [Part 2](#part-2)
+    - [Even More Practice](https://gist.github.com/MisterBrash/df850424a11413b6660ac0b6b930852a#file-more-conditionals-and-loops-md)
     
 </td>
 <td td valign="top" style="height: 100px;padding-right:50px">
