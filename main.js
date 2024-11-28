@@ -159,20 +159,111 @@ function which_day(n) {
     }
 }
 
+/**while loop */
+function countdown(start, stop) {
+    
+    while (start > stop) {
+        console.log(start)
+        start == start--
+    }
+}
+
+function random_until(min, max, stop) {
+
+}
+
+
+/**do-while loop */
+
+function print_odd(n) {
+
+    do {
+
+    } while (n >2) {
+
+    }
+
+}
+
+function factorial(n) {
+    let value = 1
+    let product = 1
+   
+    do {
+        console.log(product * value)
+        value = value++
+
+    } while (value <= n)
+
+    return product
+}
+
+
+/**for loop */
+
+function count_up(start, stop){
+    for (start; start <= stop; start++){
+        console.log(start)
+    }
+
+}
+
+function count_down(start, stop) {
+    for (start; start >= stop; start--){
+        console.log(start)
+    }
+    
+}
+
+
+function print_chars(str, step) {
+    for (str; str >= step; str.length -= step) {
+        console.log(str.lenght)
+    }
+
+}
 
 
 
 
+/**part 2 */
+
+
+function sum(n) {
+    let i = 0
+    let x = i
+    for(i; i <= n; i++) {
+        x = x+i
+    }
+   
+    return x
+}
 
 
 
 
+function count4(begin, end) {
+    let it = 0
+    let x = it
+    for (let i = begin; begin <= end; it+4) {
+        x = x+it
+    }
+    return x
+
+}
 
 
 
+function sum_divisible(n, x) {
+    let sum = 0
+    for (let i = x; i <= n; i += x) {
+        if (i % x == 0) {
+            sum += i 
+        }
+    }
 
-
-
+    return sum
+}
 
 
 
